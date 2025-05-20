@@ -73,7 +73,7 @@ namespace Plugins.WhiteSparrow.Queue.LoadQueue
 		protected override object ResolveAsset() => this.Asset;
 
 		private AsyncOperationHandle m_LoadOperation;
-		protected AsyncOperationHandle LoadOperation;
+		protected AsyncOperationHandle LoadOperation => m_LoadOperation;
 	
 		
 		
